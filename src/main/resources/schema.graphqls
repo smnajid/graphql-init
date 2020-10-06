@@ -1,0 +1,15 @@
+type Query {
+  hello(who: String): String!
+  people: [Person!]!
+}
+
+type Mutation {
+  createPerson(firstName: String!, lastName: String!): Person!
+}
+
+type Person {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+}
