@@ -1,4 +1,4 @@
-package com.example.graphql.model;
+package com.example.graphql.query;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

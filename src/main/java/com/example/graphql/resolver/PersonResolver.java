@@ -1,7 +1,7 @@
 
 package com.example.graphql.resolver;
 
-import com.example.graphql.model.Person;
+import com.example.graphql.query.Person;
 import graphql.kickstart.tools.GraphQLResolver;
 import org.springframework.stereotype.Service;
 

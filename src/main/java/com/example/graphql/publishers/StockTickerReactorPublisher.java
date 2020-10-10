@@ -82,7 +82,7 @@ public class StockTickerReactorPublisher {
 		CURRENT_STOCK_PRICES.put("IBM", dollars(147, 10));
 		CURRENT_STOCK_PRICES.put("AMZN", dollars(1002, 94));
 		CURRENT_STOCK_PRICES.put("MSFT", dollars(77, 49));
-		CURRENT_STOCK_PRICES.put("GOOGL", dollars(1007, 87));
+		CURRENT_STOCK_PRICES.put("GOOG", dollars(1007, 87));
 	}
 
 	private StockPriceUpdate rollUpdate() {
