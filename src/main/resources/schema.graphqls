@@ -5,7 +5,7 @@ schema {
 
 type Query {
   people: [Person!]!
-  vehicles: [Car]
+  vehicles: [Vehicle]
 }
 
 type Mutation {

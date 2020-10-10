@@ -1,5 +1,6 @@
 package com.example.graphql;
 
+import com.example.graphql.model.Car;
 import com.example.graphql.model.SportCar;
 import graphql.kickstart.tools.SchemaParserDictionary;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +17,7 @@ public class GraphqlApplication {
 	@Bean
 	public SchemaParserDictionary schemaParserDictionary() {
 		return new SchemaParserDictionary()
-//				.add(ChildOne.class)
+			.add(Car.class)
 				.add(SportCar.class);
 	}
 

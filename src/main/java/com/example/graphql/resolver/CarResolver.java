@@ -6,5 +6,5 @@ import graphql.kickstart.tools.GraphQLResolver;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CarResolver implements GraphQLResolver<Car> {
+public class CarResolver extends VehicleResolver<Car> {
 }
