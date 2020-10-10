@@ -18,4 +18,8 @@ public class CreatePersonMutationResolver implements GraphQLMutationResolver {
     public Person createPerson(final String firstName, final String lastName) {
         return personService.createPerson(firstName, lastName);
     }
+
+    public Person updateScore(Integer id, Integer score){
+        return personService.updateScore(id, score);
+    }
 }

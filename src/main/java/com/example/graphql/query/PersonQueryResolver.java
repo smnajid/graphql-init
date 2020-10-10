@@ -20,4 +20,6 @@ public class PersonQueryResolver implements GraphQLQueryResolver {
     public Collection<Person> people() {
         return personService.getPeople();
     }
+
+
 }
