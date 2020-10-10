@@ -32,15 +32,18 @@ type StockPriceUpdate {
 
 interface Vehicle {
   name: String
+  price: Int
 }
 
 type Car implements Vehicle{
   name: String
+  price: Int
   seatNumber: Int
 }
 
 type SportCar implements Vehicle{
   name: String
+  price: Int
   seatNumber: Int
   category: String
 }
