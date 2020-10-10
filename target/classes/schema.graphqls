@@ -5,6 +5,7 @@ schema {
 
 type Query {
   people: [Person!]!
+  vehicles: [Car]
 }
 
 type Mutation {
@@ -27,4 +28,19 @@ type StockPriceUpdate {
   stockCode : String
   stockPrice : Float
   stockPriceChange : Float
+}
+
+interface Vehicle {
+  name: String
+}
+
+type Car implements Vehicle{
+  name: String
+  seatNumber: Int
+}
+
+type SportCar implements Vehicle{
+  name: String
+  seatNumber: Int
+  category: String
 }
