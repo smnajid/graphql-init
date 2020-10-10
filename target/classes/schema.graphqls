@@ -1,0 +1,30 @@
+schema {
+  query: Query
+  subscription : Subscription
+}
+
+type Query {
+  people: [Person!]!
+}
+
+type Mutation {
+  createPerson(firstName: String!, lastName: String!): Person!
+}
+
+type Person {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  fullName: String!
+}
+
+type Subscription {
+  stockQuotes(stockCodes:[String]) : StockPriceUpdate!
+}
+
+type StockPriceUpdate {
+  dateTime : String
+  stockCode : String
+  stockPrice : Float
+  stockPriceChange : Float
+}
